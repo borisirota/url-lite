@@ -16,3 +16,13 @@ module.exports.parse = function (url) {
     hash: matches[10]
   }
 }
+
+module.exports.format = function (url) {
+  var protocol = url.protocol ? (url.protocol + '//') : ''
+  var port = url.port ? (':' + url.port) : ''
+  var origin = ''
+  if (url.origin) origin = url.origin
+  else if (url.host) origin = protocol + url.host
+  else if (url.hostname) origin = protocol + url.hostname + port
+  return origin + url.pathname + url.search + url.hash
+}

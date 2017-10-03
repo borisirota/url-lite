@@ -1,6 +1,6 @@
 # url-lite
 
-Lightweight node url.parse regex based drop in replacement for browsers
+Lightweight node url regex based drop in replacement for browsers
 
 Inspired by [Getting parts of a URL (Regex)](https://stackoverflow.com/a/24527267)
 
@@ -16,7 +16,6 @@ npm install url-lite --save
 var url = require('url-lite')
 
 var result = url.parse('https://example.com/path?param=value#hash')
-
 console.log(result)
 /*
 {
@@ -33,6 +32,10 @@ console.log(result)
   hash: '#hash'
 }
 */
+
+var result2 = url.format(result)
+console.log(result2)
+// 'https://example.com/path?param=value#hash'
 ```
 
 # license
