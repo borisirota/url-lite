@@ -1,7 +1,7 @@
 {
   "name": "url-lite",
   "version": "1.0.0",
-  "description": "lightweight node url.parse drop in replacement for browsers",
+  "description": "lightweight node url.parse regex based drop in replacement for browsers",
   "main": "index.js",
   "author": "Boris Sirota <borisirota@gmail.com> (https://github.com/borisirota)",
   "license": "MIT",
