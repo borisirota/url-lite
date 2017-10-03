@@ -1,0 +1,16 @@
+{
+  "name": "url-lite",
+  "version": "1.0.0",
+  "description": "lightweight node url.parse drop in replacement for browsers",
+  "main": "index.js",
+  "author": "Boris Sirota <borisirota@gmail.com> (https://github.com/borisirota)",
+  "license": "MIT",
+  "keywords": [
+    "url",
+    "lite",
+    "parse",
+    "browser",
+    "webpack"
+  ],
+  "homepage": "https://github.com/borisirota/url-lite"
+}
