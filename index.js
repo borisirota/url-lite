@@ -24,5 +24,8 @@ module.exports.format = function (url) {
   if (url.origin) origin = url.origin
   else if (url.host) origin = protocol + url.host
   else if (url.hostname) origin = protocol + url.hostname + port
-  return origin + url.pathname + url.search + url.hash
+  var pathname = url.pathname || ''
+  var search = url.search || ''
+  var hash = url.hash || ''
+  return origin + pathname + search + hash
 }
