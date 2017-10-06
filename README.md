@@ -1,6 +1,6 @@
 # url-lite
 
-Lightweight node url regex based drop in replacement for browsers
+Lightweight node url api compatible regex based drop in replacement for browsers
 
 Inspired by [Getting parts of a URL (Regex)](https://stackoverflow.com/a/24527267)
 
